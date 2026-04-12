@@ -2,18 +2,10 @@
 SDNET2018/
 __MACOSX/
 
-# Ablation checkpoints (keep only final models)
-checkpoints/proto_abl*.pt
-checkpoints/proto_best.pt
-checkpoints/proto_best_v2.pt
-checkpoints/deep_svdd*.pth
-checkpoints/FCDDWithSE*.pt
-checkpoints/scratch_*.pt
-checkpoints/patch_svdd*.pt
-checkpoints/*svdd*.pt
-checkpoints/improved_svdd*.pt
-checkpoints/svdd_*.pt
-results/patch_svdd_scratch_best.pt
+# Model checkpoints and weights (too large for GitHub)
+*.pt
+*.pth
+checkpoints/
 
 # Python
 __pycache__/
