@@ -5,7 +5,12 @@ __MACOSX/
 # Model checkpoints and weights (too large for GitHub)
 *.pt
 *.pth
-checkpoints/
+checkpoints/*
+
+# Exceptions — key reproducibility checkpoints
+!checkpoints/binary_cnn.pth
+!checkpoints/patch_svdd_scratch_best.pt
+!results/patch_svdd_pretrained_best.pt
 
 # Python
 __pycache__/
