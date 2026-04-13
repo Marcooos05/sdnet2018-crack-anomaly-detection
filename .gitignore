@@ -10,6 +10,7 @@ checkpoints/*
 # Exceptions — key reproducibility checkpoints
 !checkpoints/binary_cnn.pth
 !checkpoints/patch_svdd_scratch_best.pt
+!checkpoints/proto_final.pt
 !results/patch_svdd_pretrained_best.pt
 
 # Python
