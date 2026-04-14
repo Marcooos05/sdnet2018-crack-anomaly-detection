@@ -31,6 +31,7 @@ git clone https://github.com/Marcooos05/sdnet2018-crack-anomaly-detection.git
 ```
 
 ### 2. Install dependencies
+Best to install in virtual env
 
 ```bash
 pip install -r requirements.txt
