@@ -27,8 +27,7 @@ Anomaly detection on the [SDNET2018](https://digitalcommons.usu.edu/all_datasets
 ### 1. Clone the repo
 
 ```bash
-git clone <repo-url>
-cd <repo-name>
+git clone https://github.com/Marcooos05/sdnet2018-crack-anomaly-detection.git
 ```
 
 ### 2. Install dependencies
@@ -59,20 +58,24 @@ SDNET2018/
 
 Run notebooks in order. Each notebook is self-contained and saves checkpoints/results for downstream notebooks.
 
+The notebook order follows the progression of the project: 
+
+> One-class anomaly detection (Deep SVDD → Patch SVDD → FCDD → AE → Student-Teacher), then comparison against the one-class SOTA baseline PatchCore, followed by few-shot learning with ProtoNet, and finally comparison against a supervised binary upper bound.
+
 | Notebook | Description |
 |----------|-------------|
 | `0_data_preprocessing.ipynb` | Dataset exploration, patch extraction, split generation |
 | `1_deep_svdd_with_F_norm.ipynb` | Deep SVDD baseline |
 | `1_improved_svdd.ipynb` | Deep SVDD with improved initialisation |
-| `2_autoencoder.ipynb` | Convolutional autoencoder baseline |
-| `2_patchcore_efficientnet.ipynb` | PatchCore with EfficientNet-B4 backbone |
-| `3_fcdd.ipynb` | Fully Convolutional Data Description (FCDD) |
-| `4_few_shot.ipynb` | ProtoNet baseline (emb=128, freeze=layer2) |
 | `5_svdd_ablation_fixed.ipynb` | SVDD ablation study |
-| `6_binary_cnn.ipynb` | Supervised Binary CNN (upper bound) |
 | `7_patch_svdd.ipynb` | Patch-level SVDD with ResNet backbone |
+| `3_fcdd.ipynb` | Fully Convolutional Data Description (FCDD) |
+| `2_autoencoder.ipynb` | Convolutional autoencoder baseline |
 | `8_student_teacher.ipynb` | Student-Teacher anomaly detection |
+| `2_patchcore_efficientnet.ipynb` | PatchCore with EfficientNet-B4 backbone |
+| `4_few_shot.ipynb` | ProtoNet baseline (emb=128, freeze=layer2) |
 | `9_protonet_ablation.ipynb` | ProtoNet hyperparameter ablation (emb, margin, freeze, preprocessing) |
+| `6_binary_cnn.ipynb` | Supervised Binary CNN (upper bound) |
 | `10_protonet_final.ipynb` | Final ProtoNet training + evaluation (best model) |
 
 ---
