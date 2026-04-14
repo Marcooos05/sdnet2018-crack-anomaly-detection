@@ -5,7 +5,7 @@ Group 35: Avitra Phon (1006946) · Marcus Lim (1006855)
 
 Anomaly detection on the [SDNET2018](https://digitalcommons.usu.edu/all_datasets/48/) concrete crack dataset using multiple deep learning approaches, with a prototypical network (ProtoNet) with triplet loss achieving the best result: **AUROC 0.8049** using only 10 labelled normal images.
 
-Our ProtoNet is an adapted prototype-based metric-learning model. It is grounded in Prototypical Networks for prototype construction and distance-based inference (Snell et al., 2017), while the embedding space is trained with triplet loss following the metric-learning formulation of FaceNet (Schroff et al., 2015). As related anomaly-detection work, Park et al. (2023) also show that prototype-guided triplet-style objectives can improve anomaly sensitivity, although their setting is weakly supervised video anomaly detection rather than image-based crack detection.
+Our ProtoNet is an adapted prototype-based metric-learning model. It is grounded in Prototypical Networks for prototype construction and distance-based inference (Snell et al., 2017), while the embedding space is trained with triplet loss following the metric-learning formulation of FaceNet (Schroff et al., 2015).
 
 ---
 
