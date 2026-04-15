@@ -1,4 +1,5 @@
 # Road Crack Anomaly Detection on SDNET2018
+> [View the final report here](DeepLearning-ProjectReport.pdf)
 
 **50.039 Theory and Practice of Deep Learning — SUTD Y2026**
 Group 35: Avitra Phon (1006946) · Marcus Lim (1006855)
